@@ -9,6 +9,7 @@ import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
 import Contact from "./Contact";
 import About from "./About";
+import Partners from "../components/Support/Partners";
 function LandingPage() {
   React.useEffect(() => {
     document.body.classList.add("landing-page");
@@ -48,6 +49,9 @@ function LandingPage() {
         </section>
         <section id="contactus">
           <Contact />
+        </section>
+        <section id="aboutus">
+          <Partners />
         </section>
         <DefaultFooter />
       </div>
