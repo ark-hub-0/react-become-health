@@ -97,20 +97,17 @@ function Contact() {
                       Contact Number
                     </label>
                   </div>
-                  <div class="" style={{ color: "#5543ca", textAlign: "left",fontSize: '18px' }}>
-                    <label style={{marginLeft:'1%'}}>Message</label>
-                    <br />
-                    <textarea
-                      id="area"
-                      // class="autoExpand forumPost form-control"
-                      rows="4"
-                      cols={95}
-                      data-min-rows="4"
-                      spellcheck="false"
-                      style={{overflow:"auto", resize:"vertical",border:'2px solid #5543ca', marginLeft:'1%'}}
-                    ></textarea>
+                  <div class="form-field col-lg-12">
+                    <input
+                      id="message"
+                      class="input-text js-input"
+                      type="text"
+                      required
+                    />
+                    <label class="label" for="message">
+                      Message
+                    </label>
                   </div>
-
                   <div class="form-field col-lg-12">
                     <input class="submit-btn" type="submit" value="Submit" />
                   </div>
