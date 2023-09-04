@@ -10,6 +10,7 @@ import DefaultFooter from "components/Footers/DefaultFooter.js";
 import Contact from "./Contact";
 import About from "./About";
 import Partners from "../components/Support/Partners";
+import Carousel from "../components/Support/Carousel";
 function LandingPage() {
   React.useEffect(() => {
     document.body.classList.add("landing-page");
@@ -44,6 +45,9 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
+        <section id="carousel">
+          <Carousel />
+        </section>
         <section id="aboutus">
           <About />
         </section>
