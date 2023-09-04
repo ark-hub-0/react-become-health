@@ -41,7 +41,7 @@ function Contact() {
         <div className="section section-contact-us text-center">
           <Container>
             <h2 className="title">Want to contact us?</h2>
-            <p className="description">Your project is very important to us.</p>
+            <p className="description">Get in Touch with us.</p>
             <Row>
               <link
                 href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"

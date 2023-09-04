@@ -2,6 +2,7 @@
   "name": "become-health",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://becomehealth.github.io/become-health",
   "dependencies": {
     "bootstrap": "^5.3.1",
     "emailjs-com": "^3.2.0",
@@ -20,6 +21,8 @@
     "sass": "1.62.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -55,5 +58,8 @@
     "svgo": "3.0.2",
     "fsevents": "2.3.2",
     "chokidar": "3.5.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
