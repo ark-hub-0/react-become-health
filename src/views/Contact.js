@@ -109,7 +109,7 @@ function Contact() {
                     </label>
                   </div>
                   <div class="form-field col-lg-12">
-                    <input class="submit-btn" type="submit" value="Submit" />
+                    <input class="submit-btn" style={{wordWrap:"break-word"}} type="submit" value="Submit" />
                   </div>
                 </form>
               </section>
