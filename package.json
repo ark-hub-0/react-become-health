@@ -2,7 +2,7 @@
   "name": "become-health",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://becomehealth.github.io/become-health",
+  "homepage": "https://ark-hub-0.github.io/become-health",
   "dependencies": {
     "bootstrap": "^5.3.1",
     "emailjs-com": "^3.2.0",
