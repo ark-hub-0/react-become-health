@@ -95,7 +95,7 @@ function ExamplesNavbar() {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                   >
-                    <h6>TMS</h6>
+                    <p>TMS</p>
                     {showChildDropdown && (
                       <div>
                         {/* <p>Depression</p>
@@ -105,7 +105,7 @@ function ExamplesNavbar() {
                         <p>Nicotine Cessation</p> */}
 
                         <ul>
-                          <ol>Depression</ol>
+                          <ol style={{textAlign:"left"}}>Depression</ol>
                           <ol>OCD</ol>
                           <ol>Nicotine Cessation</ol>
                         </ul>

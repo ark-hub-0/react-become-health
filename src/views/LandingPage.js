@@ -9,6 +9,7 @@ import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
 import Contact from "./Contact";
 import About from "./About";
+import Service from "./Service";
 import Partners from "../components/Support/Partners";
 import Carousel from "../components/Support/Carousel";
 function LandingPage() {
@@ -47,6 +48,9 @@ function LandingPage() {
         </div>
         <section id="carousel">
           <Carousel />
+        </section>
+        <section id="services">
+          <Service />
         </section>
         <section id="aboutus">
           <About />

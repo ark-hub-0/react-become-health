@@ -55,20 +55,20 @@ export default function Carousel() {
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={1}
-        src={require("../../assets/img/IMET.jpeg")}
+        src={require("../../assets/img/Carousel1.jpeg")}
         alt='...'
       >
-        <h1 style={{color:"black", fontSize:"60px"}}>IMET</h1>
-        <p style={{color:"black"}}>The IMET stresses a 360 solution which embraces assessment and treatment through the collaborative rubric of “Integration.” With an assembled team of medical experts ranging from Psychiatrists, Physicians, Psychologists, Psychiatric Nurses, Naturopaths and Fitness Experts, the IMET begins with a comprehensive multi-disciplinary assessment and treatment consultation that lays the foundation for a thoroughgoing 90-day integrative medical solution.</p>
+        <h1 style={{color:"white", fontSize:"60px"}}>IMET</h1>
+        <p style={{color:"white"}}>The IMET stresses a 360 solution which embraces assessment and treatment through the collaborative rubric of “Integration.” With an assembled team of medical experts ranging from Psychiatrists, Physicians, Psychologists, Psychiatric Nurses, Naturopaths and Fitness Experts, the IMET begins with a comprehensive multi-disciplinary assessment and treatment consultation that lays the foundation for a thoroughgoing 90-day integrative medical solution.</p>
       </MDBCarouselItem>
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={2}
-        src={require("../../assets/img/EarlyDetect.jpeg")}
+        src={require("../../assets/img/Carousel2.jpeg")}
         alt='...'
       >
-        <h1 style={{color:"black", fontSize:"60px"}}>Early Detect</h1>
-        <p style={{color:"black"}}>Mental illness is the leading cause of disability in the workplace. EarlyDetect was developed to provide clinicians with precise patient information to help achieve a more accurate diagnosis of mental health disorders.
+        <h1 style={{color:"white", fontSize:"60px"}}>Early Detect</h1>
+        <p style={{color:"white"}}>Mental illness is the leading cause of disability in the workplace. EarlyDetect was developed to provide clinicians with precise patient information to help achieve a more accurate diagnosis of mental health disorders.
 
           Our service targets the health care system, assisting general practitioners in facilitating diagnosis and easing referral time, tracking documentation, and enhancing diagnostic accuracy. We also target the private sector, where companies of all sizes and configurations can utilize mental health screening to facilitate employee wellness and risk management. Our customers will benefit from significantly reduced costs of absenteeism and presenteeism, an enhanced corporate culture of safety and wellness, and a positive reputation among customers and competitors for valuing and proactively addressing employee mental health.</p>
       </MDBCarouselItem>
@@ -76,11 +76,11 @@ export default function Carousel() {
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={3}
-        src={require("../../assets/img/Third.jpeg")}
+        src={require("../../assets/img/Carousel3.jpeg")}
         alt='...'
       >
-        <h1 style={{color:"black", fontSize:"60px"}}>Third slide label</h1>
-        <p style={{color:"black"}}>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        <h1 style={{color:"white", fontSize:"60px"}}>Third slide label</h1>
+        <p style={{color:"white"}}>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
       </MDBCarouselItem>
     </MDBCarousel>
   );
