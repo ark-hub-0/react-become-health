@@ -1,6 +1,8 @@
 import React from "react";
 import { NavDropdown } from "react-bootstrap";
 import { Link } from "react-scroll";
+import { useState } from "react";
+
 // reactstrap components
 import {
   Collapse,
@@ -36,6 +38,15 @@ function ExamplesNavbar() {
       window.removeEventListener("scroll", updateNavbarColor);
     };
   });
+  const [showChildDropdown, setShowChildDropdown] = useState(false);
+
+  function handleMouseEnter() {
+    setShowChildDropdown(true);
+  }
+
+  function handleMouseLeave() {
+    setShowChildDropdown(false);
+  }
   return (
     <>
       {collapseOpen ? (
@@ -50,10 +61,16 @@ function ExamplesNavbar() {
       <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg">
         <Container>
           <div className="navbar-translate">
-            <Link to="navbarheader" smooth={true} duration={500} style={{ cursor: "pointer" }}>
+            <Link
+              to="navbarheader"
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
               <NavbarBrand id="navbar-brand">
                 <img
-                  src={require("../../assets/img/white.png")} alt="Become Health"
+                  src={require("../../assets/img/white.png")}
+                  alt="Become Health"
                   style={{ height: "66px", margin: "auto" }}
                 />
               </NavbarBrand>
@@ -67,14 +84,36 @@ function ExamplesNavbar() {
             <Nav navbar>
               <NavDropdown title="Services">
                 <NavDropdown.Item>
-                  <Link to="#" smooth={true} duration={500} style={{ cursor: "pointer" }}>
-                    <NavLink>IMET</NavLink>
+                  {/* <Link to="#" smooth={true} duration={500} style={{ cursor: "pointer" }}>
                   </Link>
+                  <NavLink></NavLink> */}
+                  IMET
                 </NavDropdown.Item>
 
                 <NavDropdown.Item>
-                  <NavDropdown title="TMS">
-                    <NavDropdown.Item>
+                  <div
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    <h6>TMS</h6>
+                    {showChildDropdown && (
+                      <div>
+                        {/* <p>Depression</p>
+                        <br/>
+                        <p>OCD</p>
+                        <br/> 
+                        <p>Nicotine Cessation</p> */}
+
+                        <ul>
+                          <ol>Depression</ol>
+                          <ol>OCD</ol>
+                          <ol>Nicotine Cessation</ol>
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                  {/* <NavDropdown className="serevices">
+                    <NavDropdown.Item className="subservices">
                       <Link to="#" smooth={true} style={{ cursor: "pointer" }}>
                         <NavLink>Depression</NavLink>
                       </Link>
@@ -89,7 +128,7 @@ function ExamplesNavbar() {
                         <NavLink>Nicotine Cessation</NavLink>
                       </Link>
                     </NavDropdown.Item>
-                  </NavDropdown>
+                  </NavDropdown> */}
                 </NavDropdown.Item>
 
                 <NavDropdown.Item>EarlyDetect</NavDropdown.Item>
@@ -97,18 +136,33 @@ function ExamplesNavbar() {
               </NavDropdown>
 
               <NavItem>
-                <Link to="news" smooth={true} duration={500} style={{ cursor: "pointer" }}>
+                <Link
+                  to="news"
+                  smooth={true}
+                  duration={500}
+                  style={{ cursor: "pointer" }}
+                >
                   <NavLink>News</NavLink>
                 </Link>
               </NavItem>
 
               <NavItem>
-                <Link to="aboutus" smooth={true} duration={500} style={{ cursor: "pointer" }}>
+                <Link
+                  to="aboutus"
+                  smooth={true}
+                  duration={500}
+                  style={{ cursor: "pointer" }}
+                >
                   <NavLink>About</NavLink>
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="contactus" smooth={true} duration={500} style={{ cursor: "pointer" }}>
+                <Link
+                  to="contactus"
+                  smooth={true}
+                  duration={500}
+                  style={{ cursor: "pointer" }}
+                >
                   <NavLink>Contact Us</NavLink>
                 </Link>
               </NavItem>
