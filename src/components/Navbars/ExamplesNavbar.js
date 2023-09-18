@@ -1,4 +1,5 @@
 import React from "react";
+import { NavDropdown } from "react-bootstrap";
 import { Link } from "react-scroll";
 // reactstrap components
 import {
@@ -6,6 +7,7 @@ import {
   NavbarBrand,
   Navbar,
   NavItem,
+  NavSubItem,
   NavLink,
   Nav,
   Container,
@@ -48,7 +50,7 @@ function ExamplesNavbar() {
       <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg">
         <Container>
           <div className="navbar-translate">
-            <Link to="navbarheader" smooth={true} duration={500} style={{cursor:"pointer"}}>
+            <Link to="navbarheader" smooth={true} duration={500} style={{ cursor: "pointer" }}>
               <NavbarBrand id="navbar-brand">
                 <img
                   src={require("../../assets/img/white.png")} alt="Become Health"
@@ -63,13 +65,50 @@ function ExamplesNavbar() {
             navbar
           >
             <Nav navbar>
+              <NavDropdown title="Services">
+                <NavDropdown.Item>
+                  <Link to="#" smooth={true} duration={500} style={{ cursor: "pointer" }}>
+                    <NavLink>IMET</NavLink>
+                  </Link>
+                </NavDropdown.Item>
+
+                <NavDropdown.Item>
+                  <NavDropdown title="TMS">
+                    <NavDropdown.Item>
+                      <Link to="#" smooth={true} style={{ cursor: "pointer" }}>
+                        <NavLink>Depression</NavLink>
+                      </Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Link to="#" smooth={true} duration={500} style={{ cursor: "pointer" }}>
+                        <NavLink>OCD</NavLink>
+                      </Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Link to="#" smooth={true} duration={500} style={{ cursor: "pointer" }}>
+                        <NavLink>Nicotine Cessation</NavLink>
+                      </Link>
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </NavDropdown.Item>
+
+                <NavDropdown.Item>EarlyDetect</NavDropdown.Item>
+                <NavDropdown.Item>Ketamine</NavDropdown.Item>
+              </NavDropdown>
+
               <NavItem>
-                <Link to="aboutus" smooth={true} duration={500} style={{cursor:"pointer"}}>
+                <Link to="news" smooth={true} duration={500} style={{ cursor: "pointer" }}>
+                  <NavLink>News</NavLink>
+                </Link>
+              </NavItem>
+
+              <NavItem>
+                <Link to="aboutus" smooth={true} duration={500} style={{ cursor: "pointer" }}>
                   <NavLink>About</NavLink>
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="contactus" smooth={true} duration={500} style={{cursor:"pointer"}}>
+                <Link to="contactus" smooth={true} duration={500} style={{ cursor: "pointer" }}>
                   <NavLink>Contact Us</NavLink>
                 </Link>
               </NavItem>
