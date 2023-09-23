@@ -198,3 +198,27 @@
 .bg-white{
     background-color: $white-color !important;
 }
+.sub-dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Position it to the right of the parent */
+    display: inline-block;
+    white-space: nowrap;
+    background-color: #fff; /* Add your desired background color here */
+    border: 1px solid #ccc; /* Add a border if needed */
+    padding: 5px; /* Add padding for spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a box shadow for depth */
+  }
+  
+  
+  .sub-dropdown .dropdown-menu {
+    position: static; 
+    display: block;
+  }
+  
+  
+  
+  
+  
+  
+  

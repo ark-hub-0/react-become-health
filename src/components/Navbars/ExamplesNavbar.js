@@ -6,13 +6,17 @@ import { useState } from "react";
 // reactstrap components
 import {
   Collapse,
-  NavbarBrand,
-  Navbar,
   NavItem,
   NavLink,
   Nav,
   Container,
   UncontrolledTooltip,
+  Navbar,
+  NavbarBrand,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
 } from "reactstrap";
 
 function ExamplesNavbar() {
@@ -40,11 +44,21 @@ function ExamplesNavbar() {
   const [showChildDropdown, setShowChildDropdown] = useState(false);
   const handleMouseEnter = () => {
     setShowChildDropdown(true);
-  }
+  };
 
   const handleMouseLeave = () => {
     setShowChildDropdown(false);
-  }
+  };
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [tmsDropdownOpen, setTmsDropdownOpen] = useState(false);
+  const toggleTmsDropdown = () => {
+    setTmsDropdownOpen(!tmsDropdownOpen);
+  };
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
   return (
     <>
       {collapseOpen ? (
@@ -80,37 +94,35 @@ function ExamplesNavbar() {
             navbar
           >
             <Nav navbar>
-              <NavDropdown title="Services">
-                <NavDropdown.Item>IMET</NavDropdown.Item>
+              <Dropdown
+                nav
+                inNavbar
+                isOpen={dropdownOpen}
+                toggle={toggleDropdown}
+              >
+                <DropdownToggle nav caret>
+                  Services
+                </DropdownToggle>
+                <DropdownMenu>
+                  <DropdownItem>IMET</DropdownItem>
+                  <DropdownItem
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    TMS
+                    {showChildDropdown && (
+                      <div className="sub-dropdown">
+                        <DropdownItem>OCD</DropdownItem>
+                        <DropdownItem>Depression</DropdownItem>
+                        <DropdownItem>Nicotine Cessation</DropdownItem>
+                      </div>
+                    )}
+                  </DropdownItem>
 
-                <NavDropdown.Item
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}>
-                  TMS
-                  {showChildDropdown && (
-                    <NavDropdown class="nav-item show dropdown">
-                      <NavDropdown.Item>
-                        <Link to="#" smooth={true} style={{ cursor: "pointer" }}>
-                          <NavLink>Depression</NavLink>
-                        </Link>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item>
-                        <Link to="#" smooth={true} duration={500} style={{ cursor: "pointer" }}>
-                          <NavLink>OCD</NavLink>
-                        </Link>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item>
-                        <Link to="#" smooth={true} duration={500} style={{ cursor: "pointer" }}>
-                          <NavLink>Nicotine Cessation</NavLink>
-                        </Link>
-                      </NavDropdown.Item>
-                    </NavDropdown>
-                  )}
-                </NavDropdown.Item>
-
-                <NavDropdown.Item>EarlyDetect</NavDropdown.Item>
-                <NavDropdown.Item>Ketamine</NavDropdown.Item>
-              </NavDropdown>
+                  <DropdownItem>EarlyDetect</DropdownItem>
+                  <DropdownItem>Ketamine</DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
 
               <NavItem>
                 <Link
@@ -172,8 +184,8 @@ function ExamplesNavbar() {
               </NavItem>
             </Nav>
           </Collapse>
-        </Container >
-      </Navbar >
+        </Container>
+      </Navbar>
     </>
   );
 }
