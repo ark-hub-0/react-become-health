@@ -22,9 +22,9 @@ function Service() {
     const [activeButton, setActiveButton] = useState(false);
 
     const handleButtonClick = (button) => {
-        
+
         if (activeButton === button) {
-            setActiveButton(false);
+            //DOnt call anything
         } else {
             setActiveButton(button);
         }
