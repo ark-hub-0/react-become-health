@@ -83,11 +83,11 @@ function ExamplesNavbar() {
               <NavDropdown title="Services">
                 <NavDropdown.Item>IMET</NavDropdown.Item>
 
-                <NavDropdown.Item
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}>
+                <NavDropdown.Item>
+                  {/* // onMouseEnter={handleMouseEnter}
+                  // onMouseLeave={handleMouseLeave}> */}
                   TMS
-                  {showChildDropdown && (
+                  {/* {showChildDropdown && ( */}
                     <NavDropdown class="nav-item show dropdown">
                       <NavDropdown.Item>
                         <Link to="#" smooth={true} style={{ cursor: "pointer" }}>
@@ -105,7 +105,7 @@ function ExamplesNavbar() {
                         </Link>
                       </NavDropdown.Item>
                     </NavDropdown>
-                  )}
+                  {/* )} */}
                 </NavDropdown.Item>
 
                 <NavDropdown.Item>EarlyDetect</NavDropdown.Item>

@@ -150,6 +150,35 @@
   color: #ddd !important;
 }
 
+.affiliated-partners {
+  display: "flex";
+  align-items: "center";
+  justify-content: "center";
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    cursor: pointer;
+  }
+}
+
 .parallax {
   width: 100%;
   height: 570px;
@@ -244,6 +273,7 @@
     height: 640px;
     overflow: hidden;
   }
+
   .parallax .parallax-image img {
     height: 100%;
     width: auto;
@@ -307,10 +337,12 @@
 }
 
 @media (max-width: 768px) {
+
   .btn,
   .btn-morphing {
     margin-bottom: 10px;
   }
+
   .parallax .motto {
     top: 170px;
     margin-top: 0;
