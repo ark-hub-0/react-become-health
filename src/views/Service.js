@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar";
 
 import {
@@ -14,12 +14,15 @@ import {
 
 function Service() {
 
+    useEffect(() => {
+        // Method to be called on page load
+        setActiveButton(1);
+      }, []);
+
     const [activeButton, setActiveButton] = useState(false);
 
     const handleButtonClick = (button) => {
-        if (!activeButton){
-            setActiveButton(1);
-        }
+        
         if (activeButton === button) {
             setActiveButton(false);
         } else {
