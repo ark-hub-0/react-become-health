@@ -110,3 +110,16 @@
 .btn-group button:hover {
   background-color: skyblue;
 }
+
+.sub-title {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Droid Serif";
+  color: #727272;
+}
+
+.partner-logo {
+  width: "35%";
+  padding-left: 70px;
+}

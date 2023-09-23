@@ -58,7 +58,7 @@ function LandingPage() {
         <section id="contactus">
           <Contact />
         </section>
-        <section id="aboutus">
+        <section id="partners">
           <Partners />
         </section>
         <DefaultFooter />
