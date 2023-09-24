@@ -108,15 +108,16 @@ function ExamplesNavbar() {
                   <DropdownItem
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
-                  >
-                    TMS
-                    {showChildDropdown && (
-                      <div className="sub-dropdown">
-                        <DropdownItem>OCD</DropdownItem>
-                        <DropdownItem>Depression</DropdownItem>
-                        <DropdownItem>Nicotine Cessation</DropdownItem>
-                      </div>
-                    )}
+                  > TMS
+                    <Dropdown className="sub-dropdown">
+                      {showChildDropdown && (
+                        <DropdownMenu>
+                          <DropdownItem>OCD</DropdownItem>
+                          <DropdownItem>Depression</DropdownItem>
+                          <DropdownItem>Nicotine Cessation</DropdownItem>
+                        </DropdownMenu>
+                      )}
+                    </Dropdown>
                   </DropdownItem>
 
                   <DropdownItem>EarlyDetect</DropdownItem>
