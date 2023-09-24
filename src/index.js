@@ -13,6 +13,7 @@ import "assets/demo/contact.css";
 import LandingPage from "views/LandingPage.js";
 import About from "views/About";
 import Contact from "views/Contact";
+import Service from "views/Service";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -23,6 +24,7 @@ root.render(
       <Route path="*" element={<Navigate to="/landing-page" replace />} />
       <Route path="/about" element = {<About/>}/>
       <Route path="/contact" element = {<Contact/>}/>
+      <Route path="/service" component={<Service/>} />
     </Routes>
   </BrowserRouter>
 );

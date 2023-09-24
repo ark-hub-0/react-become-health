@@ -2,7 +2,6 @@ import React from "react";
 
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
@@ -51,11 +50,11 @@ function LandingPage() {
           <Carousel />
         </section>
         <section id="IMET">
-          <Service />
+          <Service/>
         </section>
-        <section id="news">
+        {/* <section id="news">
           <Service />
-        </section>
+        </section> */}
         <section id="aboutus">
           <About />
         </section>

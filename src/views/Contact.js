@@ -4,14 +4,8 @@ import emailjs from "emailjs-com";
 
 // reactstrap components
 import {
-  Button,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
   Row,
-  Col,
 } from "reactstrap";
 
 function Contact() {

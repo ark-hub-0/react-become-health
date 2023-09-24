@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { LinkContainer } from 'react-router-bootstrap'
 import { useState } from "react";
 
 // reactstrap components
@@ -100,27 +99,31 @@ function ExamplesNavbar() {
                   Services
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem>
-                    <Link
-                      to="/imet"
-                      smooth={true}
-                      duration={500}
-                      style={{ cursor: "pointer" }}
-                    >
-                      IMET
-                    </Link>
+                  <DropdownItem
+                    onClick={() => {
+                      const container =
+                        document.getElementById(`container-imet`);
+                      if (container) {
+                        container.click();
+                        container.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }}
+                  >
+                    IMET
                   </DropdownItem>
                   <DropdownItem
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
-                  > <Link
-                    to="/tms"
-                    smooth={true}
-                    duration={500}
-                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      const container =
+                        document.getElementById(`container-tms`);
+                      if (container) {
+                        container.click();
+                        container.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }}
                   >
-                      TMS
-                    </Link>
+                    TMS
                     <Dropdown className="sub-dropdown">
                       {showChildDropdown && (
                         <DropdownMenu>
@@ -132,22 +135,31 @@ function ExamplesNavbar() {
                     </Dropdown>
                   </DropdownItem>
 
-                  <DropdownItem><LinkContainer
-                    to="EarlyDetect"
-                    smooth={true}
-                    duration={500}
-                    style={{ cursor: "pointer" }}
+                  <DropdownItem
+                    onClick={() => {
+                      const container = document.getElementById(
+                        `container-earlydetect`
+                      );
+                      if (container) {
+                        container.click();
+                        container.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }}
                   >
                     EarlyDetect
-                  </LinkContainer></DropdownItem>
-                  <DropdownItem><LinkContainer
-                    to="Ketamine"
-                    smooth={true}
-                    duration={500}
-                    style={{ cursor: "pointer" }}
+                  </DropdownItem>
+                  <DropdownItem
+                    onClick={() => {
+                      const container =
+                        document.getElementById(`container-Ketamine`);
+                      if (container) {
+                        container.click();
+                        container.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }}
                   >
                     Ketamine
-                  </LinkContainer></DropdownItem>
+                  </DropdownItem>
                 </DropdownMenu>
               </Dropdown>
 
