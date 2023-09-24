@@ -12,7 +12,7 @@
 
 .dropdown-menu {
     background-color: #ffffff;
-    opacity: 0.75;
+    opacity: 0.85;
     position: absolute;
     min-width: 40px;
 
@@ -20,6 +20,14 @@
         text-transform: uppercase;
         font-size: 0.7142em;
         line-height: 1.625rem;
+
+        a {
+            vertical-align: middle;
+            
+            &:not(.btn):not(.dropdown-item) {
+                color: black;
+            }
+        }
 
         &:hover {
             background-color: #17a2b8;
@@ -34,10 +42,9 @@
 .sub-dropdown {
     // top: 0;
     left: 100%;
-    display: inline-block;
+    // display: flex;
     white-space: nowrap;
 
     background-color: #ffffff;
     position: absolute;
-    min-width: 40px;
 }

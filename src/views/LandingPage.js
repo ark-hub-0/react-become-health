@@ -2,6 +2,7 @@ import React from "react";
 
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
@@ -27,7 +28,7 @@ function LandingPage() {
   return (
     <>
       <section id="navbarheader">
-      <ExamplesNavbar />
+        <ExamplesNavbar />
       </section>
       <div className="wrapper">
         <LandingPageHeader />
@@ -49,7 +50,10 @@ function LandingPage() {
         <section id="carousel">
           <Carousel />
         </section>
-        <section id="services">
+        <section id="IMET">
+          <Service />
+        </section>
+        <section id="news">
           <Service />
         </section>
         <section id="aboutus">

@@ -1,6 +1,6 @@
 import React from "react";
-import { NavDropdown } from "react-bootstrap";
 import { Link } from "react-scroll";
+import { LinkContainer } from 'react-router-bootstrap'
 import { useState } from "react";
 
 // reactstrap components
@@ -50,10 +50,6 @@ function ExamplesNavbar() {
     setShowChildDropdown(false);
   };
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [tmsDropdownOpen, setTmsDropdownOpen] = useState(false);
-  const toggleTmsDropdown = () => {
-    setTmsDropdownOpen(!tmsDropdownOpen);
-  };
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
@@ -104,11 +100,27 @@ function ExamplesNavbar() {
                   Services
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem>IMET</DropdownItem>
+                  <DropdownItem>
+                    <Link
+                      to="/imet"
+                      smooth={true}
+                      duration={500}
+                      style={{ cursor: "pointer" }}
+                    >
+                      IMET
+                    </Link>
+                  </DropdownItem>
                   <DropdownItem
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
-                  > TMS
+                  > <Link
+                    to="/tms"
+                    smooth={true}
+                    duration={500}
+                    style={{ cursor: "pointer" }}
+                  >
+                      TMS
+                    </Link>
                     <Dropdown className="sub-dropdown">
                       {showChildDropdown && (
                         <DropdownMenu>
@@ -120,8 +132,22 @@ function ExamplesNavbar() {
                     </Dropdown>
                   </DropdownItem>
 
-                  <DropdownItem>EarlyDetect</DropdownItem>
-                  <DropdownItem>Ketamine</DropdownItem>
+                  <DropdownItem><LinkContainer
+                    to="EarlyDetect"
+                    smooth={true}
+                    duration={500}
+                    style={{ cursor: "pointer" }}
+                  >
+                    EarlyDetect
+                  </LinkContainer></DropdownItem>
+                  <DropdownItem><LinkContainer
+                    to="Ketamine"
+                    smooth={true}
+                    duration={500}
+                    style={{ cursor: "pointer" }}
+                  >
+                    Ketamine
+                  </LinkContainer></DropdownItem>
                 </DropdownMenu>
               </Dropdown>
 
