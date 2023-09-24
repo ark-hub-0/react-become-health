@@ -1,6 +1,5 @@
 import React from "react";
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import emailjs from "emailjs-com";
 
 // reactstrap components
 import {
@@ -9,25 +8,25 @@ import {
 } from "reactstrap";
 
 function Contact() {
-  const email = (e) => {
-    e.preventDefault();
+  // const email = (e) => {
+  //   e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_4jhtydj",
-        "template_54llnkf",
-        "karanpaul543@gmail.com",
-        "GCOJ5Z7rad20C-Tv9"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+  //   emailjs
+  //     .sendForm(
+  //       "service_4jhtydj",
+  //       "template_54llnkf",
+  //       "karanpaul543@gmail.com",
+  //       "GCOJ5Z7rad20C-Tv9"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // };
   return (
     <>
       <ExamplesNavbar />
@@ -44,7 +43,7 @@ function Contact() {
               />
               <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
               <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-              
+
               <section class="get-in-touch">
                 <form class="contact-form row">
                   <div class="form-field col-lg-12">

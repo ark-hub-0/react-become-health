@@ -1,0 +1,15 @@
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    /* margin: 0% 5% 0% 5%; */
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/Media.jpg");
+}
+
+.media h2 {
+    color: white;
+    text-transform: uppercase;
+}

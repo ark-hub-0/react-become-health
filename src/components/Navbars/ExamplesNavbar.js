@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { Link as NewLink, Outlet } from "react-router-dom";
 import { useState } from "react";
 
 // reactstrap components
@@ -52,6 +53,12 @@ function ExamplesNavbar() {
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
+  };
+
+  const [newsDropdownOpen, setNewsDropdownOpen] = useState(false);
+
+  const toggleNewsDropdown = () => {
+    setNewsDropdownOpen(!newsDropdownOpen);
   };
 
   return (
@@ -164,14 +171,38 @@ function ExamplesNavbar() {
               </Dropdown>
 
               <NavItem>
-                <Link
-                  to="news"
-                  smooth={true}
-                  duration={500}
-                  style={{ cursor: "pointer" }}
+                <Dropdown
+                  nav
+                  inNavbar
+                  isOpen={newsDropdownOpen}
+                  toggle={toggleNewsDropdown}
                 >
-                  <NavLink>News</NavLink>
-                </Link>
+                  <DropdownToggle nav caret>
+                    News
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    <DropdownItem>
+                      <NewLink
+                        to="/news"
+                        // target="_blank"
+                        style={{ cursor: "pointer" }}
+                      >
+                        Media
+                      </NewLink>
+                      <Outlet />
+                    </DropdownItem>
+                    <DropdownItem>
+                      <Link
+                        to="service"
+                        smooth={true}
+                        duration={500}
+                        style={{ cursor: "pointer" }}
+                      >
+                        Articles
+                      </Link>
+                    </DropdownItem>
+                  </DropdownMenu>
+                </Dropdown>
               </NavItem>
 
               <NavItem>
@@ -224,7 +255,7 @@ function ExamplesNavbar() {
             </Nav>
           </Collapse>
         </Container>
-      </Navbar>
+      </Navbar >
     </>
   );
 }

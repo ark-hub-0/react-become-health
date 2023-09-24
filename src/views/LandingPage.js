@@ -27,7 +27,7 @@ function LandingPage() {
   return (
     <>
       <section id="navbarheader">
-        <ExamplesNavbar />
+      <ExamplesNavbar />
       </section>
       <div className="wrapper">
         <LandingPageHeader />
