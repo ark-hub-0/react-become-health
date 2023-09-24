@@ -1,5 +1,4 @@
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar"
-import LandingPage from "./LandingPage"
 
 function News() {
     return (

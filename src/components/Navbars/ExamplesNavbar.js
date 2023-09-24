@@ -183,8 +183,8 @@ function ExamplesNavbar() {
                   <DropdownMenu>
                     <DropdownItem>
                       <NewLink
-                        to="/news"
-                        // target="_blank"
+                        to="news"
+                        target="_blank"
                         style={{ cursor: "pointer" }}
                       >
                         Media

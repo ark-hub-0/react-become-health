@@ -26,7 +26,8 @@ root.render(
       <Route path="*" element={<Navigate to="/landing-page" replace />} />
       <Route path="/about" element = {<About/>}/>
       <Route path="/contact" element = {<Contact/>}/>
-      <Route path="/service" component={<Service/>} />
+      <Route path="/service" element={<Service/>} />
+      <Route path="/landing-page/news" element={<News/>} />
     </Routes>
   </BrowserRouter>
 );
