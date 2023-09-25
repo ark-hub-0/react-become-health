@@ -173,9 +173,9 @@ function About() {
                       Director, Business Development and Stakeholder Relations
                     </p>
                     <p className="description">
-                      David Grauwiler was the Executive Director of the Canadian
-                      Mental Health Association (CMHA), Alberta Division, now
-                      David is a part of Become Health. David is a prominant
+                      Chris Tse is the Executive Director of the Canadian
+                      Mental Health Association (CMHA), now
+                      Chris is a part of Become Health. Chris is a prominant
                       leader in the mental health space and has years of
                       experience working with the provincial government and the
                       non-profit sector.
