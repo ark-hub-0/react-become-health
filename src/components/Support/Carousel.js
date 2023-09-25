@@ -55,8 +55,9 @@ export default function Carousel() {
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={1}
-        src={require("../../assets/img/bg11.jpg")}
+        src={require("../../assets/img/Carousel1.jpeg")}
         alt='...'
+        style={{aspectRatio:"6/2"}}
       >
         <h1 style={{color:"white", fontSize:"60px"}}>IMET</h1>
         <p style={{color:"white"}}>The IMET stresses a 360 solution which embraces assessment and treatment through the collaborative rubric of “Integration.” With an assembled team of medical experts ranging from Psychiatrists, Physicians, Psychologists, Psychiatric Nurses, Naturopaths and Fitness Experts, the IMET begins with a comprehensive multi-disciplinary assessment and treatment consultation that lays the foundation for a thoroughgoing 90-day integrative medical solution.</p>
@@ -66,6 +67,7 @@ export default function Carousel() {
         itemId={2}
         src={require("../../assets/img/bg7.jpg")}
         alt='...'
+        style={{aspectRatio:"6/2"}}
       >
         <h1 style={{color:"white", fontSize:"60px"}}>Early Detect</h1>
         <p style={{color:"white"}}>Mental illness is the leading cause of disability in the workplace. EarlyDetect was developed to provide clinicians with precise patient information to help achieve a more accurate diagnosis of mental health disorders.
@@ -78,9 +80,10 @@ export default function Carousel() {
         itemId={3}
         src={require("../../assets/img/Carousel3.jpeg")}
         alt='...'
+        style={{aspectRatio:"6/2"}}
       >
-        <h1 style={{color:"white", fontSize:"60px"}}>Third slide label</h1>
-        <p style={{color:"white"}}>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        <h1 style={{color:"white", fontSize:"60px"}}>TMS Therapy</h1>
+        <p style={{color:"white"}}>A revolutionary treatment for depression and OCD</p>
       </MDBCarouselItem>
     </MDBCarousel>
   );
