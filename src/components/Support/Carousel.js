@@ -69,7 +69,7 @@ export default function Carousel() {
         alt='...'
         style={{aspectRatio:"6/2"}}
       >
-        <h1 style={{color:"white", fontSize:"60px"}}>Early Detect</h1>
+        <h1 style={{color:"white", fontSize:"60px"}}>EarlyDetect</h1>
         <p style={{color:"white"}}>Mental illness is the leading cause of disability in the workplace. EarlyDetect was developed to provide clinicians with precise patient information to help achieve a more accurate diagnosis of mental health disorders.
 
           Our service targets the health care system, assisting general practitioners in facilitating diagnosis and easing referral time, tracking documentation, and enhancing diagnostic accuracy. We also target the private sector, where companies of all sizes and configurations can utilize mental health screening to facilitate employee wellness and risk management. Our customers will benefit from significantly reduced costs of absenteeism and presenteeism, an enhanced corporate culture of safety and wellness, and a positive reputation among customers and competitors for valuing and proactively addressing employee mental health.</p>
