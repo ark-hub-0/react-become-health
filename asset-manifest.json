@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/react-become-health/static/css/main.2eb3e44b.css",
-    "main.js": "/react-become-health/static/js/main.ef443f35.js",
+    "main.css": "/react-become-health/static/css/main.49ba5088.css",
+    "main.js": "/react-become-health/static/js/main.bf243abe.js",
     "static/media/Dr.yang.png": "/react-become-health/static/media/Dr.yang.4324536ee9563c686815.png",
     "static/media/Kristen.png": "/react-become-health/static/media/Kristen.a2bffdd236bcb82d051c.png",
     "static/media/Dr.Pratap.png": "/react-become-health/static/media/Dr.Pratap.f514f56a22862b9007c9.png",
     "static/media/Luke.png": "/react-become-health/static/media/Luke.ce837f41068e046ec9c3.png",
+    "static/media/AboutBecome.jpg": "/react-become-health/static/media/AboutBecome.b3888a6ef2fb38108a06.jpg",
     "static/media/Media.jpg": "/react-become-health/static/media/Media.e3a836e6c1ba3066e530.jpg",
-    "static/media/MainBG.jpg": "/react-become-health/static/media/MainBG.aeed5008222088665a48.jpg",
-    "static/media/Dave.png": "/react-become-health/static/media/Dave.fba4e54b12776e4bd3ff.png",
-    "static/media/Carousel2.jpeg": "/react-become-health/static/media/Carousel2.c88e92f4c15facae9e19.jpeg",
+    "static/media/bg7.jpg": "/react-become-health/static/media/bg7.6249276d677cd6fd680e.jpg",
+    "static/media/chris-tse_round.png": "/react-become-health/static/media/chris-tse_round.c0d9ed6ed9ef89c68a18.png",
     "static/media/Carousel1.jpeg": "/react-become-health/static/media/Carousel1.e3707f472e00395c2b6f.jpeg",
     "static/media/IMETLogo.png": "/react-become-health/static/media/IMETLogo.1ef0916a4579490f56aa.png",
     "static/media/Carousel3.jpeg": "/react-become-health/static/media/Carousel3.32b9df54a495013d31d6.jpeg",
-    "static/media/white.png": "/react-become-health/static/media/white.0cca4b2ff0167957fe1e.png",
     "static/media/nucleo-outline.eot": "/react-become-health/static/media/nucleo-outline.56814a6b7240045e1494.eot",
     "static/media/nucleo-outline.ttf": "/react-become-health/static/media/nucleo-outline.1102ed9b2d16dccdec05.ttf",
+    "static/media/Logo_backup.png": "/react-become-health/static/media/Logo_backup.10f9e2c2bde021707720.png",
     "static/media/nucleo-outline.woff": "/react-become-health/static/media/nucleo-outline.1a1036e643f97457ec5f.woff",
     "static/media/nucleo-outline.woff2": "/react-become-health/static/media/nucleo-outline.802141dd0dcc63b21cbb.woff2",
     "index.html": "/react-become-health/index.html",
-    "main.2eb3e44b.css.map": "/react-become-health/static/css/main.2eb3e44b.css.map",
-    "main.ef443f35.js.map": "/react-become-health/static/js/main.ef443f35.js.map"
+    "main.49ba5088.css.map": "/react-become-health/static/css/main.49ba5088.css.map",
+    "main.bf243abe.js.map": "/react-become-health/static/js/main.bf243abe.js.map"
   },
   "entrypoints": [
-    "static/css/main.2eb3e44b.css",
-    "static/js/main.ef443f35.js"
+    "static/css/main.49ba5088.css",
+    "static/js/main.bf243abe.js"
   ]
 }
