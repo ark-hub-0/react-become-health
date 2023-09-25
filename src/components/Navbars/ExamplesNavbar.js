@@ -183,7 +183,7 @@ function ExamplesNavbar() {
                   <DropdownMenu>
                     <DropdownItem>
                       <NewLink
-                        to="/news"
+                        to="/react-become-health/news"
                         target="_blank"
                         style={{ cursor: "pointer" }}
                       >

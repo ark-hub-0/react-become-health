@@ -90,7 +90,7 @@ function DefaultFooter() {
                   <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
                   <p class="foot_p"><i class="fas fa-home mr-3"></i>300 2603 Hewes Way
                   <br/><i class="fas fa-phone mr-3"></i>(780) 465-5749
-                  <br/><a href="mailto:info@becomehealth.com" class="text-reset">info@becomehealth.com</a></p>
+                  <br/><a href="mailto:info@becomehealth.com" class="text-reset">info@becomehealth.ca</a></p>
                 </div>
               </div>
             </section>
