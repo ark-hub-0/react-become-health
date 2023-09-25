@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/react-become-health/static/css/main.8c6b8691.css",
-    "main.js": "/react-become-health/static/js/main.02b6a577.js",
+    "main.css": "/react-become-health/static/css/main.2eb3e44b.css",
+    "main.js": "/react-become-health/static/js/main.ef443f35.js",
     "static/media/Dr.yang.png": "/react-become-health/static/media/Dr.yang.4324536ee9563c686815.png",
     "static/media/Kristen.png": "/react-become-health/static/media/Kristen.a2bffdd236bcb82d051c.png",
     "static/media/Dr.Pratap.png": "/react-become-health/static/media/Dr.Pratap.f514f56a22862b9007c9.png",
     "static/media/Luke.png": "/react-become-health/static/media/Luke.ce837f41068e046ec9c3.png",
+    "static/media/Media.jpg": "/react-become-health/static/media/Media.e3a836e6c1ba3066e530.jpg",
     "static/media/MainBG.jpg": "/react-become-health/static/media/MainBG.aeed5008222088665a48.jpg",
     "static/media/Dave.png": "/react-become-health/static/media/Dave.fba4e54b12776e4bd3ff.png",
     "static/media/Carousel2.jpeg": "/react-become-health/static/media/Carousel2.c88e92f4c15facae9e19.jpeg",
@@ -18,11 +19,11 @@
     "static/media/nucleo-outline.woff": "/react-become-health/static/media/nucleo-outline.1a1036e643f97457ec5f.woff",
     "static/media/nucleo-outline.woff2": "/react-become-health/static/media/nucleo-outline.802141dd0dcc63b21cbb.woff2",
     "index.html": "/react-become-health/index.html",
-    "main.8c6b8691.css.map": "/react-become-health/static/css/main.8c6b8691.css.map",
-    "main.02b6a577.js.map": "/react-become-health/static/js/main.02b6a577.js.map"
+    "main.2eb3e44b.css.map": "/react-become-health/static/css/main.2eb3e44b.css.map",
+    "main.ef443f35.js.map": "/react-become-health/static/js/main.ef443f35.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c6b8691.css",
-    "static/js/main.02b6a577.js"
+    "static/css/main.2eb3e44b.css",
+    "static/js/main.ef443f35.js"
   ]
 }
