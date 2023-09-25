@@ -27,14 +27,14 @@ function LandingPageHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("../../assets/img/MainBG.jpg") + ")"
+            backgroundImage: "url(" + require("../../assets/img/AboutBecome.jpg") + ")"
           }}
           ref={pageHeader}
         ></div>
         <div className="content-center">
           <Container>
-            <h1 className="title">Become Health.</h1>
-            <pre style={{fontSize: 20, color:"white"}}>Buiding The Future in the present</pre>
+            <h1 className="title">Become Health</h1>
+            <pre style={{fontSize: 20, color:"white"}}>Buiding the Future in the Present</pre>
           </Container>
         </div>
       </div>

@@ -55,7 +55,7 @@ export default function Carousel() {
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={1}
-        src={require("../../assets/img/Carousel1.jpeg")}
+        src={require("../../assets/img/bg11.jpg")}
         alt='...'
       >
         <h1 style={{color:"white", fontSize:"60px"}}>IMET</h1>
@@ -64,7 +64,7 @@ export default function Carousel() {
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={2}
-        src={require("../../assets/img/Carousel2.jpeg")}
+        src={require("../../assets/img/bg7.jpg")}
         alt='...'
       >
         <h1 style={{color:"white", fontSize:"60px"}}>Early Detect</h1>

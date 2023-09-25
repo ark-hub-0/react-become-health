@@ -116,7 +116,7 @@ function Service() {
           )}
           {activeButton === 4 && (
             <Container >
-              <h2 className="title">Early Detect</h2>
+              <h2 className="title">EarlyDetect</h2>
               <h5 className="sub-title">
                 Achieve a more accurate diagnosis of mental health disorders
               </h5>

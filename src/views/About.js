@@ -16,7 +16,7 @@ function About() {
       <div className="wrapper">
         <div className="section section-team text-center" id="aboutteam">
           <Container>
-            <h2 className="title">Here is our team</h2>
+            <h2 className="title">Our Team</h2>
             <div className="team">
               <Row>
                 <Col md="4">
@@ -166,9 +166,9 @@ function About() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
-                      src={require("../assets/img/team/Dave.png")}
+                      src={require("../assets/img/team/chris-tse_round.png")}
                     ></img>
-                    <h4 className="title">David Grauwiler</h4>
+                    <h4 className="title">Chris Tse</h4>
                     <p className="category text-info">
                       Director, Business Development and Stakeholder Relations
                     </p>

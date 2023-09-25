@@ -22,12 +22,12 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/landing-page" element={<LandingPage />} />
-      <Route path="*" element={<Navigate to="/landing-page" replace />} />
+      <Route path="/" element={<LandingPage />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
       <Route path="/about" element = {<About/>}/>
       <Route path="/contact" element = {<Contact/>}/>
       <Route path="/service" element={<Service/>} />
-      <Route path="/landing-page/news" element={<News/>} />
+      <Route path="/news" element={<News/>} />
     </Routes>
   </BrowserRouter>
 );

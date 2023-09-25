@@ -83,7 +83,7 @@ function ExamplesNavbar() {
             >
               <NavbarBrand id="navbar-brand">
                 <img
-                  src={require("../../assets/img/white.png")}
+                  src={require("../../assets/img/Logo_backup.png")}
                   alt="Become Health"
                   style={{ height: "66px", margin: "auto" }}
                 />
@@ -183,7 +183,7 @@ function ExamplesNavbar() {
                   <DropdownMenu>
                     <DropdownItem>
                       <NewLink
-                        to="news"
+                        to="/news"
                         target="_blank"
                         style={{ cursor: "pointer" }}
                       >
@@ -226,12 +226,12 @@ function ExamplesNavbar() {
                 </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="" id="twitter-tooltip">
-                  <i className="fab fa-twitter"></i>
+                <NavLink href="" id="linkedin-tooltip">
+                  <i className="fab fa-linkedin"></i>
                   <p className="d-lg-none d-xl-none">Twitter</p>
                 </NavLink>
-                <UncontrolledTooltip target="#twitter-tooltip">
-                  Follow us on Twitter
+                <UncontrolledTooltip target="#linkedin-tooltip">
+                  Follow us on LinkedIn
                 </UncontrolledTooltip>
               </NavItem>
               <NavItem>
