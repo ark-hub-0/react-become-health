@@ -82,7 +82,7 @@ function ExamplesNavbar() {
               style={{ cursor: "pointer" }}
             >
               <NavbarBrand id="navbar-brand">
-                <img
+                <img id="navbar-logo"
                   src={require("../../assets/img/Logo_backup.png")}
                   alt="Become Health"
                   style={{ height: "66px", margin: "auto" }}

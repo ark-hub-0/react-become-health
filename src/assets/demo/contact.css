@@ -184,3 +184,7 @@
   overflow: hidden;
   background: transparent;
 }
+
+#navbar-logo:hover {
+  transform: scale(0.9) rotate(-2deg);
+}
