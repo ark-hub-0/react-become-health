@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/react-become-health/static/css/main.49ba5088.css",
-    "main.js": "/react-become-health/static/js/main.46638578.js",
+    "main.css": "/react-become-health/static/css/main.0c0e7170.css",
+    "main.js": "/react-become-health/static/js/main.e199b057.js",
+    "static/media/News.jpeg": "/react-become-health/static/media/News.de53d62a97fe4f6e0439.jpeg",
     "static/media/Dr.yang.png": "/react-become-health/static/media/Dr.yang.4324536ee9563c686815.png",
     "static/media/Kristen.png": "/react-become-health/static/media/Kristen.a2bffdd236bcb82d051c.png",
     "static/media/Dr.Pratap.png": "/react-become-health/static/media/Dr.Pratap.f514f56a22862b9007c9.png",
     "static/media/Luke.png": "/react-become-health/static/media/Luke.ce837f41068e046ec9c3.png",
     "static/media/AboutBecome.jpg": "/react-become-health/static/media/AboutBecome.b3888a6ef2fb38108a06.jpg",
     "static/media/Media.jpg": "/react-become-health/static/media/Media.e3a836e6c1ba3066e530.jpg",
+    "static/media/bg1.jpg": "/react-become-health/static/media/bg1.71a28027225b8ae945bb.jpg",
+    "static/media/bg3.jpg": "/react-become-health/static/media/bg3.850b808854f295b2c596.jpg",
     "static/media/bg7.jpg": "/react-become-health/static/media/bg7.6249276d677cd6fd680e.jpg",
     "static/media/chris-tse_round.png": "/react-become-health/static/media/chris-tse_round.c0d9ed6ed9ef89c68a18.png",
+    "static/media/bg8.jpg": "/react-become-health/static/media/bg8.2c89438b189a2a391f19.jpg",
     "static/media/Carousel1.jpeg": "/react-become-health/static/media/Carousel1.e3707f472e00395c2b6f.jpeg",
     "static/media/IMETLogo.png": "/react-become-health/static/media/IMETLogo.1ef0916a4579490f56aa.png",
     "static/media/Carousel3.jpeg": "/react-become-health/static/media/Carousel3.32b9df54a495013d31d6.jpeg",
@@ -19,11 +23,11 @@
     "static/media/nucleo-outline.woff": "/react-become-health/static/media/nucleo-outline.1a1036e643f97457ec5f.woff",
     "static/media/nucleo-outline.woff2": "/react-become-health/static/media/nucleo-outline.802141dd0dcc63b21cbb.woff2",
     "index.html": "/react-become-health/index.html",
-    "main.49ba5088.css.map": "/react-become-health/static/css/main.49ba5088.css.map",
-    "main.46638578.js.map": "/react-become-health/static/js/main.46638578.js.map"
+    "main.0c0e7170.css.map": "/react-become-health/static/css/main.0c0e7170.css.map",
+    "main.e199b057.js.map": "/react-become-health/static/js/main.e199b057.js.map"
   },
   "entrypoints": [
-    "static/css/main.49ba5088.css",
-    "static/js/main.46638578.js"
+    "static/css/main.0c0e7170.css",
+    "static/js/main.e199b057.js"
   ]
 }
