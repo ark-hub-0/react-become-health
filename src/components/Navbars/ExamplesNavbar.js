@@ -170,7 +170,7 @@ function ExamplesNavbar() {
                 </DropdownMenu>
               </Dropdown>
 
-              <NavItem>
+              {/* <NavItem>
                 <Dropdown
                   nav
                   inNavbar
@@ -203,8 +203,16 @@ function ExamplesNavbar() {
                     </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
+              </NavItem> */}
+              <NavItem>
+                <NewLink
+                  to="/react-become-health/news"
+                  target="_blank"
+                  style={{ cursor: "pointer", textDecoration:"none" }}
+                >
+                  <NavLink>NEWS</NavLink>
+                </NewLink>
               </NavItem>
-
               <NavItem>
                 <Link
                   to="aboutus"
