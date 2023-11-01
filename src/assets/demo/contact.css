@@ -187,12 +187,11 @@
   position: fixed;
   right: 0px;
   bottom: 0px;
-  padding: 5px;
-  overflow: hidden;
+  /* padding: 5px; */
+  /* overflow: auto; */
   background: transparent;
+  z-index: 1;
 }
-
-.media-heading {}
 
 /* #navbar-logo:hover {
   transform: scale(0.9) rotate(-2deg);

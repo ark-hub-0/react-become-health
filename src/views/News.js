@@ -66,7 +66,7 @@ function News() {
             <div className="news-with-desc">
                 <div class="row">
                     <div class="col-md-4 how-img">
-                        <button className="news-button" onClick={() => setShown(!shown)}><img src={require("../assets/img/Media.jpg")} className="img-thumbnail img-fluid" alt="" /></button>
+                        <img onClick={() => setShown(!shown)} src={require("../assets/img/Media.jpg")} className="img-thumbnail img-fluid" alt="" />
                     </div>
                     <div class="col-md-8">
                         <h4>Let's Meet for a Beer: Episode 45</h4>
