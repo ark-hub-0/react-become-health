@@ -1,17 +1,64 @@
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar"
 import React, { useState } from 'react';
+import { Link } from "react-scroll";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Container } from "reactstrap";
 
+import {
+    Navbar,
+    NavbarBrand
+} from "reactstrap";
+
 function News() {
+
+    const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+    React.useEffect(() => {
+        const updateNavbarColor = () => {
+            if (
+                document.documentElement.scrollTop > 399 ||
+                document.body.scrollTop > 399
+            ) {
+                setNavbarColor("navbar-dark");
+            } else if (
+                document.documentElement.scrollTop < 400 ||
+                document.body.scrollTop < 400
+            ) {
+                setNavbarColor("navbar-transparent");
+            }
+        };
+        window.addEventListener("scroll", updateNavbarColor);
+        return function cleanup() {
+            window.removeEventListener("scroll", updateNavbarColor);
+        };
+    });
 
     const [shown, setShown] = React.useState(false)
 
-    
+
     return (
         <>
-            <ExamplesNavbar />
+            {/* <ExamplesNavbar /> */}
+            <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg">
+                <Container>
+                    <div className="navbar-translate">
+                        <Link
+                            to="navbarheader"
+                            smooth={true}
+                            duration={500}
+                            style={{ cursor: "pointer" }}
+                        >
+                            <NavbarBrand id="navbar-brand">
+                                <img id="navbar-logo"
+                                    src={require("../assets/img/Logo_backup.png")}
+                                    alt="Become Health"
+                                    style={{ height: "66px", margin: "auto" }}
+                                />
+                            </NavbarBrand>
+                        </Link>
+                    </div>
+                </Container>
+            </Navbar>
             <div className="media">
                 <h2>Media</h2>
             </div>
@@ -25,7 +72,7 @@ function News() {
                         <h4>Let's Meet for a Beer: Episode 45</h4>
                         <h4 class="subheading">Mental Health in the Hospitality Industry</h4>
                         <p class="text-muted">On today's episode of the Let's Talk About Mental Health Podcast, Cam Dobranski joins me as co-host for part one in our series about mental health in the workplace. Today we are joined by Dr. Pratap Chokka, Founder of The Chokka Center For Integrative Health. On the podcast, Dr. Chokka talks to us about what we can do to identify signs that someone may need help and how they can access that help</p>
-                        {shown ? <VideoModal src="https://embed.podcasts.apple.com/ca/podcast/episode-45-mental-health-in-the-hospitality-industry/id1546165556?i=1000535294807"/> : null}
+                        {shown ? <VideoModal src="https://embed.podcasts.apple.com/ca/podcast/episode-45-mental-health-in-the-hospitality-industry/id1546165556?i=1000535294807" /> : null}
 
                         {/* {shown ? <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="175" style={{ width: "100%", overflow: "hidden", background: "transparent" }} sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/ca/podcast/episode-45-mental-health-in-the-hospitality-industry/id1546165556?i=1000535294807"></iframe> :null } */}
                     </div>
@@ -88,13 +135,13 @@ export default News;
 
 const VideoModal = (props) => {
     return <div className="popup-content">
-      <iframe
-          title={props.src}
-          allowFullScreen
-          frameBorder="0"
-          width="100%"
-          height="175"
-          src={props.src}
-      />
+        <iframe
+            title={props.src}
+            allowFullScreen
+            frameBorder="0"
+            width="100%"
+            height="175"
+            src={props.src}
+        />
     </div>
-  }
+}

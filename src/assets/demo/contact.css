@@ -138,35 +138,41 @@
 }
 
 .news-with-desc {
-  
+
   margin: 2%;
 }
 
-.news-button{
+.news-button {
   border: none;
   cursor: pointer;
   appearance: none;
   background-color: inherit;
 }
 
-.news-with-desc  h4{
-  color: #ffa500;
+.news-with-desc h4 {
+  color: #000000;
   font-weight: bold;
   font-size: 30px;
+  margin-top: 0%;
 }
-.news-with-desc  .subheading{
-  color: #3931af;
+
+.news-with-desc .subheading {
+  font-style: italic;
+  font-weight: 550;
+  font-family: "Droid Serif";
+  color: #17a2b8;
   font-size: 20px;
 }
-.news-with-desc  .row
-{
+
+.news-with-desc .row {
   margin-top: 10%;
 }
-.how-img 
-{
+
+.how-img {
   text-align: center;
 }
-.how-img img{
+
+.how-img img {
   object-fit: fill;
 }
 
@@ -179,12 +185,15 @@
 
 .popup-content {
   position: fixed;
-  right: 0px; bottom: 0px;
+  right: 0px;
+  bottom: 0px;
   padding: 5px;
   overflow: hidden;
   background: transparent;
 }
 
-#navbar-logo:hover {
+.media-heading {}
+
+/* #navbar-logo:hover {
   transform: scale(0.9) rotate(-2deg);
-}
+} */
