@@ -55,7 +55,7 @@ function News() {
                 </Container>
             </Navbar>
             <div className="media">
-                <h2>Media</h2>
+                <h2 class="title">NEWS</h2>
             </div>
 
             <div className="news-with-desc">
