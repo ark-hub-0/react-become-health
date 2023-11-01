@@ -184,13 +184,18 @@
 }
 
 .popup-content {
+  height: 30%;
+  width: 30%;
   position: fixed;
   right: 0px;
   bottom: 0px;
-  /* padding: 5px; */
-  /* overflow: auto; */
+  overflow: hidden;
   background: transparent;
   z-index: 1;
+}
+
+.news-navbar {
+  background: transparent;
 }
 
 /* #navbar-logo:hover {

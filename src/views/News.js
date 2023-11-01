@@ -1,4 +1,3 @@
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar"
 import React, { useState } from 'react';
 import { Link } from "react-scroll";
 import Button from 'react-bootstrap/Button';
@@ -15,12 +14,8 @@ function News() {
     const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
     React.useEffect(() => {
         const updateNavbarColor = () => {
+            setNavbarColor("navbar-dark");
             if (
-                document.documentElement.scrollTop > 399 ||
-                document.body.scrollTop > 399
-            ) {
-                setNavbarColor("navbar-dark");
-            } else if (
                 document.documentElement.scrollTop < 400 ||
                 document.body.scrollTop < 400
             ) {
@@ -39,7 +34,7 @@ function News() {
     return (
         <>
             {/* <ExamplesNavbar /> */}
-            <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg">
+            <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg" style={{ position: "absolute" }}>
                 <Container>
                     <div className="navbar-translate">
                         <Link
@@ -66,7 +61,7 @@ function News() {
             <div className="news-with-desc">
                 <div class="row">
                     <div class="col-md-4 how-img">
-                        <img onClick={() => setShown(!shown)} src={require("../assets/img/Media.jpg")} className="img-thumbnail img-fluid" alt="" />
+                        <img onClick={() => setShown(!shown)} src={require("../assets/img/Media.jpg")} style={{ cursor: "pointer" }} className="img-thumbnail img-fluid" alt="" />
                     </div>
                     <div class="col-md-8">
                         <h4>Let's Meet for a Beer: Episode 45</h4>
@@ -87,7 +82,7 @@ function News() {
                             More and more success. The greater the success you have on projects, the more likely you are to get hired by clients that use GetLance.</p>
                     </div>
                     <div class="col-md-4 how-img">
-                        <img src={require("../assets/img/bg1.jpg")} class="img-thumbnail img-fluid" alt="" />
+                        <img style={{ cursor: "pointer" }} src={require("../assets/img/bg1.jpg")} class="img-thumbnail img-fluid" alt="" />
                     </div>
                 </div>
             </div>
@@ -134,14 +129,13 @@ function News() {
 export default News;
 
 const VideoModal = (props) => {
-    return <div className="popup-content">
-        <iframe
-            title={props.src}
-            allowFullScreen
-            frameBorder="0"
-            width="100%"
-            height="175"
-            src={props.src}
-        />
-    </div>
+    return <iframe
+        className="popup-content"
+        title={props.src}
+        allowFullScreen
+        frameBorder="0"
+        width="100%"
+        height="175"
+        src={props.src}
+    />
 }
