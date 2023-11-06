@@ -5294,8 +5294,16 @@ img {
   max-width: 100px;
 }
 
+.section-news .title {
+  margin-bottom: 5px;
+}
+
 .landing-page .section-team .team-player {
   margin-bottom: 15px;
+}
+
+.section-news .title {
+  margin-bottom: 5px;
 }
 
 .landing-page .section-contact-us .title {
@@ -5647,6 +5655,13 @@ img {
   position: relative;
   background: #ffffff;
 }
+
+.news-section {
+  padding: 10px 0;
+  position: relative;
+  background: #ffffff;
+}
+
 .section .row + .category {
   margin-top: 15px;
 }

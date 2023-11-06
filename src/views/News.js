@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-scroll";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { Container } from "reactstrap";
+import { Container,Row,Col } from "reactstrap";
 
 import {
     Navbar,
@@ -30,9 +30,92 @@ function News() {
 
     const [shown, setShown] = React.useState(false)
 
+    const chunk = (arr, chunkSize = 1, cache = []) => {
+        const tmp = [...arr]
+        if (chunkSize <= 0) return cache
+        while (tmp.length) cache.push(tmp.splice(0, chunkSize))
+        return cache
+    }
+    const data = {
+        "products": [
+            {
+                "id": 1,
+                "title": "Accurate Diagnosis, Personalized Treatment, Improved Function and Quality of Life",
+                "text": "EarlyDetect",
+                "img": "url(../assets/img/bg8.jpg)"
+            },
+            {
+                "id": 2,
+                "title": "Screening for major depressive disorder in a tertiary mental health centre using EarlyDetect",
+                "text": "A Machine Learning Pilot study",
+                "img": "url(../assets/img/bg8.jpg)"
+            },
+            {
+                "id": 3,
+                "title": "Usability and Emotions of Mental Health Assessment Tools",
+                "text": "Comparing Mobile App and Paper-and-Pencil Modalities",
+                "img": "url(../assets/img/bg8.jpg)"
+            },
+            {
+                "id": 4,
+                "title": "Usability and Emotions of Mental Health Assessment Tools",
+                "text": "Comparing Mobile App and Paper-and-Pencil Modalities",
+                "img": "url(../assets/img/bg8.jpg)"
+            },
+            {
+                "id": 5,
+                "title": "Usability and Emotions of Mental Health Assessment Tools",
+                "text": "Comparing Mobile App and Paper-and-Pencil Modalities",
+                "img": "url(../assets/img/bg8.jpg)"
+            },
+            {
+                "id": 6,
+                "title": "Usability and Emotions of Mental Health Assessment Tools",
+                "text": "Comparing Mobile App and Paper-and-Pencil Modalities",
+                "img": "url(../assets/img/bg8.jpg)"
+            },
+
+        
+        ]
+    }
+
+    const Product = (props) => {
+        const card = (<Card border="success" style={{ width: '18rem' }}>
+            <Card.Img variant="top" src={props.img} />
+            <Card.Body>
+              <Card.Title>{props.title}</Card.Title>
+              <Card.Text>
+                {props.text}
+              </Card.Text>
+              <Card.Title>{props.price}</Card.Title>
+              <Button variant="success">Go somewhere</Button>
+            </Card.Body>
+          </Card>)
+      return card;
+    }
+
+    const ProductList = (props) => {
+        const productsChunks = chunk(props.products, 3)
+        const rows = productsChunks.map((productChunk, index) => {
+            const productsCols = productChunk.map((product, index) => {
+                return (
+                    <Col xs="4" key={product.id}>
+                        <Product key={product.id} text={product.text} img={product.img} title={product.title} />
+                    </Col>
+                );
+            });
+            return <Row key={index}>{productsCols}</Row>
+        });
+        return (
+            <Container>
+                {rows}
+            </Container>
+        )
+    }
 
     return (
         <>
+
             {/* <ExamplesNavbar /> */}
             <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg" style={{ position: "absolute" }}>
                 <Container>
@@ -61,7 +144,7 @@ function News() {
             <div className="news-with-desc">
                 <div class="row">
                     <div class="col-md-4 how-img">
-                        <img onClick={() => setShown(!shown)} src={require("../assets/img/Media.jpg")} style={{ cursor: "pointer" }} className="img-thumbnail img-fluid" alt="" />
+                        <img onClick={() => setShown(!shown)} src={require("../assets/img/News_Beer.jpeg")} style={{ cursor: "pointer" }} className="img-thumbnail img-fluid" alt="" />
                     </div>
                     <div class="col-md-8">
                         <h4>Let's Meet for a Beer: Episode 45</h4>
@@ -86,15 +169,17 @@ function News() {
                     </div>
                 </div>
             </div>
-
+            <div className="news-section text-center">
+                <h2 className="title">Articles</h2>
+            </div>
             <div className="news">
-                <Card border="success" style={{ width: '18rem' }}>
+
+                {/* <Card border="success" style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={require("../assets/img/bg8.jpg")} />
                     <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>Accurate Diagnosis, Personalized Treatment, Improved Function and Quality of Life</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            EarlyDetect
                         </Card.Text>
                         <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
@@ -102,10 +187,9 @@ function News() {
                 <Card border="success" style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={require("../assets/img/bg7.jpg")} />
                     <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>Screening for major depressive disorder in a tertiary mental health centre using EarlyDetect</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            A Machine Learning Pilot study
                         </Card.Text>
                         <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
@@ -113,14 +197,15 @@ function News() {
                 <Card border="success" style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={require("../assets/img/bg3.jpg")} />
                     <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>Usability and Emotions of Mental Health Assessment Tools</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            Comparing Mobile App and Paper-and-Pencil Modalities
                         </Card.Text>
                         <Button variant="success">Go somewhere</Button>
                     </Card.Body>
-                </Card>
+                </Card> */}
+
+                <ProductList products={data.products} />
 
             </div>
         </>
