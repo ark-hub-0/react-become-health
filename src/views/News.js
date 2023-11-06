@@ -42,46 +42,43 @@ function News() {
                 "id": 1,
                 "title": "Accurate Diagnosis, Personalized Treatment, Improved Function and Quality of Life",
                 "text": "EarlyDetect",
-                "img": "url(../assets/img/bg8.jpg)"
+                "img": "../assets/img/bg1.jpg"
             },
             {
                 "id": 2,
                 "title": "Screening for major depressive disorder in a tertiary mental health centre using EarlyDetect",
                 "text": "A Machine Learning Pilot study",
-                "img": "url(../assets/img/bg8.jpg)"
+                "img": "../assets/img/bg1.jpg"
             },
             {
                 "id": 3,
                 "title": "Usability and Emotions of Mental Health Assessment Tools",
                 "text": "Comparing Mobile App and Paper-and-Pencil Modalities",
-                "img": "url(../assets/img/bg8.jpg)"
+                "img": "../assets/img/bg1.jpg"
             },
             {
                 "id": 4,
                 "title": "Usability and Emotions of Mental Health Assessment Tools",
                 "text": "Comparing Mobile App and Paper-and-Pencil Modalities",
-                "img": "url(../assets/img/bg8.jpg)"
+                "img": "../assets/img/bg1.jpg"
             },
             {
                 "id": 5,
                 "title": "Usability and Emotions of Mental Health Assessment Tools",
                 "text": "Comparing Mobile App and Paper-and-Pencil Modalities",
-                "img": "url(../assets/img/bg8.jpg)"
+                "img": "../assets/img/bg1.jpg"
             },
-            {
-                "id": 6,
-                "title": "Usability and Emotions of Mental Health Assessment Tools",
-                "text": "Comparing Mobile App and Paper-and-Pencil Modalities",
-                "img": "url(../assets/img/bg8.jpg)"
-            },
+            
 
         
         ]
     }
 
     const Product = (props) => {
+        // const img_path = require(props.img);
+
         const card = (<Card border="success" style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={props.img} />
+            <Card.Img variant="top" src={require("../assets/img/bg7.jpg")} />
             <Card.Body>
               <Card.Title>{props.title}</Card.Title>
               <Card.Text>
